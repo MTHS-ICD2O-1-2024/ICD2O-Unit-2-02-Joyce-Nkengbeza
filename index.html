@@ -34,7 +34,7 @@
       href="./favicon-16x16new.png"
     />
     <link rel="manifest" href="./site.webmanifest" />
-    <title>The XXX program, JS</title>
+    <title>The Math Program, in JS</title>
   </head>
 
   <body>
@@ -45,43 +45,37 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">The XXX program, with JS</span>
+          <span class="mdl-layout-title">The math program, in JS</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <div class="page-content">Intructions here ...</div>
         <img src="./images/cinnamoroll.jpeg" />
-        <!-- Simple Textfield for integers-->
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <!-- input pattern attribute -->
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="length"
-            />
-            <!-- mdl-textfield__label -->
-            <label class="mdl-textfield__label" for="demo-input"
-              >Length of ... (mm)</label
-            >
-            <!-- class "mdl-textfield__error" -->
-            <span class="mdl-textfield__error">Input is not a number</span>
-          </div>
+        <!-- basic text -->
+        <div id="add-math">
+          <p>6 + 5 = ?</p>
+        </div>
+        <div id="subtract-math">
+          <p>7 - 3 = ?</p>
+        </div>
+        <div id="multiply-math">
+          <p>3 + 4 × 2 = ?</p>
+        </div>
+        <div id="divide-math">
+          <p>(4 ÷ 2) + 3 = ?</p>
+        </div>
+        <div id="exponent-math">
+          <p>5 + 2³ = ?</p>
+        </div>
           <br />
           <!-- Accent-colored raised button with ripple -->
           <button
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="myButtonClicked()"
+            onclick="doMathClicked()"
             type="button"
-          >
-            Calculate
+            >
+            Do math
           </button>
-        </form>
-        <br />
-        <div class="page-content-answer">
-          <div id="answer">The answer is: ...</div>
-        </div>
       </main>
     </div>
   </body>
